@@ -1,0 +1,314 @@
+:root {
+  --first-color: #222831;
+  --second-color: #393e46;
+  --third-color: #ffc300;
+  --fourth-color: #eeeeee;
+  --red-color: #e51837;
+  --main-transition: 0.5s;
+}
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: var(--second-color);
+}
+.main-btn {
+  background-color: var(--red-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+.section-logo {
+  width: 90px;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--red-color);
+}
+/* Start Navbar  */
+.navbar {
+  background-color: #010101;
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--red-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--red-color);
+  color: var(--red-color);
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 30px;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--third-color);
+}
+.navbar .navbar-brand img {
+  max-width: 100%;
+  width: 50px;
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 2px;
+  background-color: var(--third-color);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* End Navbar  */
+/* Start Landing  */
+.landing {
+  background-image: url("/images/6867608_28803.jpg");
+  background-size: cover;
+  min-height: calc(100vh - 76px);
+}
+.landing .text-center {
+  transition: var(--main-transition);
+}
+.landing .text-center h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 60px;
+  letter-spacing: 5px;
+  opacity: 0.4;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.landing .text-center h1:hover {
+  opacity: 1;
+}
+.landing .text-center h1 .fa-bolt-lightning {
+  color: var(--red-color);
+  font-size: 55px;
+}
+.landing .text-center h1:hover .fa-bolt-lightning {
+  color: #38e54d;
+}
+.landing .text-center p {
+  word-spacing: 7px;
+}
+/* End Landing  */
+/* Start Features  */
+.features {
+  background-color: #010101;
+}
+.features .img-holder {
+  height: 300px;
+}
+.features .img-holder svg,
+.features .img-holder img {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .img-holder .number {
+  font-size: 17rem;
+  color: white;
+}
+.features .img-holder .modelS {
+  width: 300px;
+  max-width: 100%;
+}
+.features h4 {
+  color: var(--third-color);
+}
+/* End Features  */
+/* Start Our Work  */
+.our-work {
+  background-color: var(--first-color);
+}
+
+.our-work ul .active {
+  background-color: var(--red-color);
+  color: white;
+  border-radius: 6px;
+}
+.our-work ul li {
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+.our-work .row .box {
+  background-color: #eeeeee;
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-work .box img {
+  width: 300px;
+  height: 200px;
+  max-width: 100%;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: #e51837ad;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before {
+  transform: translateX(0);
+}
+/* End Our Work  */
+/* Start Stuff  */
+.stuff {
+  background-color: #010101;
+}
+.stuff .description {
+  max-width: 400px;
+}
+.stuff .order-tsla {
+  max-width: 100%;
+}
+/* End Stuff  */
+/* Start Team  */
+.team {
+  background-color: var(--first-color);
+}
+.team h2 {
+  color: var(--third-color);
+}
+.team h4 {
+  background-color: var(--third-color);
+}
+.team .box {
+  border-radius: 12px;
+}
+.team img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* End Team  */
+/* Start Techs  */
+.tech {
+  background-color: var(--fourth-color);
+}
+.tech .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech .row svg {
+  font-size: 50px;
+  color: #a0a0a0;
+  transition: var(--main-transition);
+}
+.tech .row svg:hover {
+  color: #3bb349;
+}
+/* End Techs  */
+/* Start Partner  */
+.partner {
+  background-color: var(--first-color);
+}
+/* End Partner  */
+/* Blog  */
+.blog .card {
+  margin-top: 30px;
+  background-color: var(--fourth-color);
+}
+.blog .card .btn {
+  background-color: var(--third-color);
+  font-weight: bold;
+  color: #010101;
+  border: none;
+  transition: var(--main-transition);
+}
+.blog .card .btn:hover {
+  background-color: var(--red-color);
+}
+/* Blog  */
+/* Account  */
+.account {
+  background-color: var(--fourth-color);
+  margin-top: 20px;
+}
+.account input[type="email"] {
+  border: none;
+  border-bottom: 1px solid var(--first-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+.account input[type="email"]:focus {
+  outline: none;
+}
+.account .text {
+  font-size: 18px;
+  font-weight: 600px;
+}
+.account ::placeholder {
+  color: var(--first-color);
+  font-size: 18px;
+}
+.account .sub {
+  background-color: var(--red-color);
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: var(--main-transition);
+}
+.account .sub:hover {
+  background-color: var(--third-color);
+  color: #010101;
+}
+/* Account  */
+/* Footer  */
+.footer {
+  background-color: var(--first-color);
+}
+.footer .logo {
+  width: 70px;
+}
+.footer .copyright > span {
+  font-weight: bold;
+  color: var(--red-color);
+}
+.footer .links li {
+  padding-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.footer .links li:hover {
+  color: var(--third-color);
+}
+.footer .contact ul svg {
+  width: 25px;
+  height: 25px;
+}
+.footer .facebook {
+  color: #1877f2;
+}
+.footer .twitter {
+  color: #1da1f2;
+}
+.footer .linkedin {
+  color: #0077b5;
+}
+.footer .youtube {
+  color: #ff0000;
+}
+/* Footer  */
