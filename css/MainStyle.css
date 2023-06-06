@@ -69,8 +69,9 @@ body {
 /* End Navbar  */
 /* Start Landing  */
 .landing {
-  background-image: url("/images/6867608_28803.jpg");
+  background-image: url(../images/6867608_28803.jpg);
   background-size: cover;
+  background-position: center;
   min-height: calc(100vh - 76px);
 }
 .landing .text-center {
